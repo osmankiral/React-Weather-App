@@ -48,16 +48,16 @@ function App() {
 
 
         {data.name !== undefined &&
-          <div className="bottom">
-            <div className="feels">
+          <div className="bottom row">
+            <div className="feels col-sm-4">
               {data.main ? <p className="bold">{data.main.feels_like.toFixed()}°C</p> : null}
               <p>Hissediliyor</p>
             </div>
-            <div className="humidity">
+            <div className="humidity col-sm-4">
               {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
               <p>Nem</p>
             </div>
-            <div className="wind">
+            <div className="wind col-sm-4">
               {data.main ? <p className="bold">{data.wind.speed.toFixed()} MPH</p> : null}
               <p>Rüzgar Hızı</p>
             </div>
